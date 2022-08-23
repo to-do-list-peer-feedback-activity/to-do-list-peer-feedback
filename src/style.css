@@ -1,0 +1,108 @@
+:root {
+  --main-color: #f6f6f6;
+  --element-color: #868686;
+}
+
+* {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: var(--main-color, gray);
+}
+
+.outter {
+  list-style: none;
+  padding: 0;
+  background-color: white;
+  width: 50%;
+  min-width: 300px;
+  border: 1px var(--main-color, gray) solid;
+  border-radius: 3px;
+  box-shadow: 3px 3px #dddddde4;
+  overflow: auto;
+}
+
+.outter li {
+  padding: 20px;
+  border-bottom: 3px var(--main-color, gray) solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.outter > li:nth-of-type(3) {
+  padding: 0;
+}
+
+li i {
+  color: var(--element-color, gray);
+}
+
+.outter > li:last-of-type {
+  background-color: var(--main-color, gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--element-color, black);
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 40vw;
+  min-width: 200px;
+  border: none;
+}
+
+input[type="text"]:hover {
+  cursor: context-menu;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  cursor: text;
+}
+
+.inner {
+  width: 100%;
+  padding: 0;
+}
+
+.choices {
+  display: flex;
+  align-items: center;
+}
+
+.choices i {
+  margin-right: 10px;
+}
+
+.outter li button {
+  border: none;
+  background-color: var(--main-color, gray);
+  color: var(--element-color, black);
+}
+
+.outter li button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa-check {
+  color: #2e8ae6;
+}
+
+.fa-square {
+  color: #868686;
+}
